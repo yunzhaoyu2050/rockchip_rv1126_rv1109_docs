@@ -1,0 +1,86 @@
+=============RK3288 Linux SDK Release Note============
+【rk3288_linux_release_v2.2.0_20200708.xml change log】
+ Kernel (4.4):
+    - Upgrade to 4.4.194
+        adjust bin-scaling-sel table
+	adjust pvtm-voltage-sel table
+        Add vcc_otg_vbus control for rk3288-evb-rk808-linux
+        fixes the pwm-cells of pwm3 on rk3288 SoCs
+        Fixes wifi wakeup issue
+        Upgrade mali t76x to r18
+        supoort legacy api to set propert
+ libmali
+    - Upgrade Midgard DDK to r18p0-01rel0
+
+ Buildroot (2018.02-rc3):
+    - Add rktof to app_demo
+    - Update dviceio to fix some bugs
+    - Gstreamer supports dmabuf direct import
+    - Fixes the fonts with buildroot
+    - Fixes wifi/bt on buildroot
+    - Support qt5webengine on buildroot
+    - Fixes camera 3A server
+    - Support multivideoplayer and qsetting apps
+    - Update xserver: fix wrong rga format map and fix random crash
+    - Fixes some weston render issues
+    - Support rockchip RGA 2D accel
+    - The logs output on br.log
+    - Fix date time isn't updated by default
+    - Support more shells and feature in power-key.sh
+    - Fix crash when hotplugging monitors
+    - Updtae rockchip_test to fix weston config
+    - Support mali egl client and egl buffer attaching on weston
+    - Support rsa authentication and tcp for adb
+    - support ntfs for recovery
+    - gst1-plugins-bad: kmssink/waylandsink: Bump to gst upstream
+    - qt5wayland: Update patches to fix some bugs
+
+ docs/tools:
+    - Add RMSL developer guide
+    - Add mpp/weston/chromecast/debian10 document
+    - Update Kernel/Linux/AVL/Socs/Others documents
+    - Update window/linux upgrade tools
+	AndroidTool: update from v2.69 to v2.71
+	Linux_Upgrade_Tool: update from v1.38 to v1.49
+    - Secureboottool: update to v1.95
+    - SecurityAVB: update to v2.7
+    - Upgrade SDDiskTool to v1.62
+    - rename AndroidTool to RKDevTool, and version upgrade too v2.73
+    - Update DDR/ NAND/ eMMC AVL
+    - Remove unused documents
+    - Update adb to support the env variable
+    - Updtae MPV to support drm hwdec
+    - Updtae Xserver to fix the wrong transfrom
+
+ rkbin (Rockchip binary):
+    - rk3288: tee with ta: update optee version to v1.45
+	build from optee commit in develop-rk3228 branch:
+		6a30fc35 static ta: modify length judgement in uboot storedata
+		d098c6d2 rk322x/rk3128x/rk3288: increase shm size from 1MB to 2MB
+		ad25cd57 static ta: return error if tee fs read data len is zero
+	update feature:
+		05fb3282 static ta: add support write data from user ta
+		d098c6d2 rk322x/rk3128x/rk3288: increase shm size from 1MB to 2MB
+		ad25cd57 static ta: return error if tee fs read data len is zero
+		ad25cd57 static ta: return error if tee fs read data len is zero
+		ef321390 plat: rk3288: suspend: support default suspend mode
+		ad25cd57 static ta: return error if tee fs read data len is zero
+		ef321390 plat: rk3288: suspend: support default suspend mode
+
+ Distro/Debian10:
+    - fixes the dual screen display
+    - upgrade mali to r18
+    - Fix date time isn't updated by default
+    - Fix U disk with NTFS that's not display on QT
+
+ Debian9:
+    - Update xserver to improve the performance
+    - Add pcmanfm with outline selection
+    - Support the xvimagesink for gstreamer
+    - Update mpv with hardware decode
+    - Fixes jpeg's decode to 60fps
+    - Update test_camera for uvc
+    - Update mpp to fix the encode
+    - Update rga/ffmpeg to support the chromium hardware accelerate
+    - Upgrade mali to r18
+    - Fix the power key with halt

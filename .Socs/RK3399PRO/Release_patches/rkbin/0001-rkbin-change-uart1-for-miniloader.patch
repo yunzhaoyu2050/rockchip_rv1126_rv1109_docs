@@ -1,0 +1,46 @@
+From 5304877a2af137ddf3a4ef7341ce54f79b5824a3 Mon Sep 17 00:00:00 2001
+From: Caesar Wang <wxt@rock-chips.com>
+Date: Thu, 7 Nov 2019 14:16:23 +0800
+Subject: [PATCH] rkbin: change uart1 for miniloader
+
+Change-Id: Iab566d618c6ffa05f306e574922e5a1f29cbd010
+Signed-off-by: Caesar Wang <wxt@rock-chips.com>
+---
+ RKBOOT/RK3399PROMINIALL.ini             |   4 ++--
+ bin/rk33/rk3399pro_ddr_933MHz_v1.24.bin | Bin 116492 -> 116492 bytes
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/RKBOOT/RK3399PROMINIALL.ini b/RKBOOT/RK3399PROMINIALL.ini
+index cb3fc6b..5470274 100755
+--- a/RKBOOT/RK3399PROMINIALL.ini
++++ b/RKBOOT/RK3399PROMINIALL.ini
+@@ -5,7 +5,7 @@ MAJOR=1
+ MINOR=15
+ [CODE471_OPTION]
+ NUM=1
+-Path1=bin/rk33/rk3399pro_ddr_800MHz_v1.24.bin
++Path1=bin/rk33/rk3399pro_ddr_933MHz_v1.24.bin
+ Sleep=1
+ [CODE472_OPTION]
+ NUM=1
+@@ -14,7 +14,7 @@ Path1=bin/rk33/rk3399pro_usbplug_v1.19.bin
+ NUM=2
+ LOADER1=FlashData
+ LOADER2=FlashBoot
+-FlashData=bin/rk33/rk3399pro_ddr_800MHz_v1.24.bin
++FlashData=bin/rk33/rk3399pro_ddr_933MHz_v1.24.bin
+ FlashBoot=bin/rk33/rk3399pro_miniloader_v1.19.bin
+ [OUTPUT]
+ PATH=rk3399pro_loader_v1.24.119.bin
+diff --git a/bin/rk33/rk3399pro_ddr_933MHz_v1.24.bin b/bin/rk33/rk3399pro_ddr_933MHz_v1.24.bin
+index e4ecd6ee91c5de1f9a6e1a21e8924a347bc604ba..c8c6330bc785aa9a7d640bd1ca54e21aff535e1c 100644
+GIT binary patch
+delta 33
+lcmeC_WAEu>Z`i^Z?#m^>00xZAqSG6L7{#|&_%cqZ1OSlb2wMOE
+
+delta 33
+lcmeC_WAEu>Z`i^Z?#rdj00xZAqSG6L7{#|&_%cqZ1OSqB2yOrX
+
+-- 
+2.25.0
+

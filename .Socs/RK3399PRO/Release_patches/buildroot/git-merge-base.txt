@@ -1,0 +1,20 @@
+remote url:
+github	https://github.com/rockchip-linux/buildroot.git (fetch)
+github	https://github.com/rockchip-linux/buildroot.git (push)
+rk	ssh://git@www.rockchip.com.cn/linux/rk/rk1108/buildroot (fetch)
+rk	ssh://git@www.rockchip.com.cn/linux/rk/rk1108/buildroot (push)
+remote branch:
+  m/linux
+  rk/rockchip/2018.02-rc3
+  rk/stable-rk3399pro-v1.2.2-20200312
+commit c1a7e189ce3b3ab99ecd12b0da6551c5ea48dd9c
+Author: Jeffy Chen <jeffy.chen@rock-chips.com>
+Date:   Wed Mar 11 15:09:06 2020 +0800
+
+    qt5webengine: Workaround for too long .rps file name
+    
+    When the SDK's path is to complicated, the generated .rps file name
+    might be too long for linux, which is limited to 255.
+    
+    Change-Id: Iac4e669379d31570775fa454ac105babb6631c99
+    Signed-off-by: Jeffy Chen <jeffy.chen@rock-chips.com>

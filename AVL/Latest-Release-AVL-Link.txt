@@ -1,0 +1,7 @@
+
+The latest AVL of eMMC/SPI Nor/SPI Nand/DDR/SLC Nand release link:
+https://redmine.rock-chips.com/projects/fae/documents
+
+
+The latest AVL of camera release link:
+https://redmine.rock-chips.com/projects/rockchip_camera_module_support_list/camera

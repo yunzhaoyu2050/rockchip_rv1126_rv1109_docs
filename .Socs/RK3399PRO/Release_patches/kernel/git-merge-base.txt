@@ -1,0 +1,16 @@
+remote url:
+android	ssh://git@10.10.10.78:2222/Android_pie_stable/platform/rk3399pro/rk/kernel (fetch)
+android	ssh://git@10.10.10.78:2222/Android_pie_stable/platform/rk3399pro/rk/kernel (push)
+rk	ssh://git@www.rockchip.com.cn/linux/rk/kernel-stable (fetch)
+rk	ssh://git@www.rockchip.com.cn/linux/rk/kernel-stable (push)
+remote branch:
+  m/linux
+  rk/stable-4.4-rk3399pro-linux
+commit 85c4a3b0bf192d00a38dc53fcba9e2f7196c056c
+Author: Caesar Wang <wxt@rock-chips.com>
+Date:   Thu Mar 5 18:05:08 2020 +0800
+
+    HACK: sound/soc: fixes the s2r for rk817
+    
+    Signed-off-by: Caesar Wang <wxt@rock-chips.com>
+    Change-Id: I11c5d128c004829a77a33e35462eb3cca3789dec

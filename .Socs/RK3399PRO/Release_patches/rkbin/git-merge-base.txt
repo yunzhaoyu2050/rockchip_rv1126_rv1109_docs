@@ -1,0 +1,21 @@
+remote url:
+rk	ssh://git@www.rockchip.com.cn/linux/rk/rkbin-stable (fetch)
+rk	ssh://git@www.rockchip.com.cn/linux/rk/rkbin-stable (push)
+remote branch:
+  m/linux
+  rk/stable-4.4-rk3288-linux
+  rk/stable-4.4-rk3399pro-linux
+commit 4d9721a3974007a0d49658eb8c9ddd1e5d4ef85d
+Author: XiaoDong Huang <derrick.huang@rock-chips.com>
+Date:   Fri Feb 28 18:24:01 2020 +0800
+
+    rk3368h: bl31: update version to v2.25
+    
+    Build from ATF commit:
+        5346a36a6 plat: rk3368: fix mcu suspend/resume flow
+    update feature:
+        5346a36a6 plat: rk3368: fix mcu suspend/resume flow
+        0b93630e1 rockchip: sip: add weak attribute to sip_version_handler
+    
+    Change-Id: Id97d9fbf25cbd383830af9be3df2585ba2b30948
+    Signed-off-by: XiaoDong Huang <derrick.huang@rock-chips.com>

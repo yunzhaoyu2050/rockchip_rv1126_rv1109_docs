@@ -1,0 +1,62 @@
+===========RK312X Linux SDK Release Note===========
+
+¡¾rk312x_linux_release_v1.2.0_20200806.xml change log¡¿
+
+ Buildroot (2018.02-rc3):
+    - Unified rk3126c/rk3128 buildroot config to rockchip_rk312x_defconfig
+    - Update rockchip_test, to fix some test run fail
+
+ U-Boot:
+    - Update version from rockchip internal next-dev branch
+    - Add compile parameters to define uboot.img and trust.img size
+        --sz-uboot <cell KB> <number of cells>
+        --sz-trust <cell KB> <number of cells>
+
+ Kernel (4.4):
+    - Update version from rockchip internal develop-4.4 branch
+    - Fix some issue and improve system stability
+
+ rkbin (Rockchip binary):
+    - Update Trust: rk3126/rk3128: support 128MB DDR memory layout
+
+ Debian (stretch-9.11):
+    - Add rk3128 debian BoardConfig_debian.mk
+
+ docs/tools:
+    - Add Rockchip_RK3126C_Hardware_Design_Guide_V1.0_CN.pdf
+    - Add Rockchip_RK3128_Hardware_Design_Guide_V0.1_CN.pdf
+    - Add Rockchip_RK312X_Linux_SDK_Release_V1.2.0_20200806_CN&EN
+    - Add ParameterTool to adjust paratition table config
+    - Update Linux_Upgrade_Tool to V1.49
+    - Update SDDiskTool to V1.62
+    - Rename AndroidTool to RKDevTool
+
+¡¾rk312x_linux_release_v1.1.3_20200317.xml change log¡¿
+
+ Kernel (4.4):
+    - rk3128-fireprime: fix dmc probe error
+
+ Debian (stretch-9.11):
+    - update some function
+
+¡¾rk312x_linux_release_v1.1.2_20200312.xml change log¡¿
+
+ Debian (stretch-9.11):
+    - Add rk3128 platform support
+
+¡¾rk312x_linux_release_v1.1.1_20200229.xml change log¡¿
+
+ Kernel (4.4):
+    - rk3128-fireprime add vpu function
+
+ Buildroot (2018.02-rc3):
+    - app/QLauncher: fix QLauncher do not start when weston no ready
+
+¡¾rk312x_linux_release_v1.0.0_20190719.xml change log¡¿
+
+ Buildroot (2018.02-rc3):
+    - fix recovery mode can not find misc partition
+
+¡¾rk312x_linux_release_v1.0.0_20190719.xml change log¡¿
+
+ First Release Version.
